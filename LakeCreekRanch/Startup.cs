@@ -38,6 +38,7 @@ namespace LakeCreekRanch
                 {
                     options.Conventions.AuthorizeFolder("/Account/Manage");
                     options.Conventions.AuthorizePage("/Account/Logout");
+                    options.Conventions.AuthorizeFolder("/Admin");
                 });
 
             // Register no-op EmailSender used by account confirmation and password reset during development
