@@ -1,0 +1,56 @@
+﻿@page "{id:int}"
+@model LakeCreekRanch.Pages.Admin.Lots.EditModel
+@using LakeCreekRanch.Web.Data.Enums;
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<h4>Lot</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Lot.LotId" />
+            <div class="form-group">
+                <label asp-for="Lot.DevelopmentPhaseID" class="control-label"></label>
+                <select asp-for="Lot.DevelopmentPhaseID" class="form-control" asp-items="ViewBag.DevelopmentPhaseID"></select>
+                <span asp-validation-for="Lot.DevelopmentPhaseID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Lot.Name" class="control-label"></label>
+                <input asp-for="Lot.Name" class="form-control" />
+                <span asp-validation-for="Lot.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Lot.Description" class="control-label"></label>
+                <textarea asp-for="Lot.Description" class="form-control"></textarea>
+                <span asp-validation-for="Lot.Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Lot.TotalAcres" class="control-label"></label>
+                <input asp-for="Lot.TotalAcres" class="form-control" />
+                <span asp-validation-for="Lot.TotalAcres" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Lot.SaleStatus" class="control-label"></label>
+                <select asp-for="Lot.SaleStatus" class="form-control" asp-items="Html.GetEnumSelectList<SaleStatus>()"></select>
+                <span asp-validation-for="Lot.SaleStatus" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

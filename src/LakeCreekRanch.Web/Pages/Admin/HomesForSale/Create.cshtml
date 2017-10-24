@@ -1,0 +1,81 @@
+﻿@page
+@model LakeCreekRanch.Pages.Admin.HomesForSale.CreateModel
+@using LakeCreekRanch.Web.Data.Enums;
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<h4>HomeForSale</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="HomeForSale.Description" class="control-label"></label>
+                <textarea asp-for="HomeForSale.Description" class="form-control"></textarea>
+                <span asp-validation-for="HomeForSale.Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HomeForSale.Address" class="control-label"></label>
+                <input asp-for="HomeForSale.Address" class="form-control" />
+                <span asp-validation-for="HomeForSale.Address" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HomeForSale.MlsUrl" class="control-label"></label>
+                <input asp-for="HomeForSale.MlsUrl" class="form-control" />
+                <span asp-validation-for="HomeForSale.MlsUrl" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HomeForSale.TotalSquareFeet" class="control-label"></label>
+                <input asp-for="HomeForSale.TotalSquareFeet" class="form-control" />
+                <span asp-validation-for="HomeForSale.TotalSquareFeet" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HomeForSale.BedroomCount" class="control-label"></label>
+                <input asp-for="HomeForSale.BedroomCount" class="form-control" />
+                <span asp-validation-for="HomeForSale.BedroomCount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HomeForSale.BathroomCount" class="control-label"></label>
+                <input asp-for="HomeForSale.BathroomCount" class="form-control" />
+                <span asp-validation-for="HomeForSale.BathroomCount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input asp-for="HomeForSale.HideFromWebsite" /> @Html.DisplayNameFor(model => model.HomeForSale.HideFromWebsite))
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="HomeForSale.CompletionDate" class="control-label"></label>
+                <input asp-for="HomeForSale.CompletionDate" class="form-control" />
+                <span asp-validation-for="HomeForSale.CompletionDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HomeForSale.SaleStatus" class="control-label"></label>
+                <select asp-for="HomeForSale.SaleStatus" class="form-control" asp-items="Html.GetEnumSelectList<SaleStatus>()"></select>
+                <span asp-validation-for="HomeForSale.SaleStatus" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HomeForSale.LotId" class="control-label"></label>
+                <select asp-for="HomeForSale.LotId" class ="form-control" asp-items="ViewBag.LotId"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
