@@ -10,9 +10,11 @@ namespace LakeCreekRanch.Pages.Admin
     {
         public static string Index => "Index";
         public static string DevelopmentPhases => "DevelopmentPhases\\Index";
+        public static string Lots => "Lots\\Index";
 
         public static string IndexNavClass(ViewContext viewContext) => PageNavClass(viewContext, Index);
         public static string DevelopmentPhasesNavClass(ViewContext viewContext) => PageNavClass(viewContext, DevelopmentPhases);
+        public static string LotsNavClass(ViewContext viewContext) => PageNavClass(viewContext, Lots);
 
         public static string PageNavClass(ViewContext viewContext, string page)
         {

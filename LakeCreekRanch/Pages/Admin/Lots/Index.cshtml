@@ -1,0 +1,60 @@
+﻿@page
+@model LakeCreekRanch.Pages.Admin.Lots.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Lot List</h2>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Lot[0].Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Lot[0].Description)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Lot[0].TotalAcres)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Lot[0].SaleStatus)
+                </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Lot[0].DevelopmentPhase)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Lot) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalAcres)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SaleStatus)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DevelopmentPhase.Name)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.LotId">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.LotId">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.LotId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
