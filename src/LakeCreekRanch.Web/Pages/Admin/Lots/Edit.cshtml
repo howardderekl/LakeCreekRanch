@@ -1,6 +1,7 @@
 ﻿@page "{id:int}"
 @model LakeCreekRanch.Web.Pages.Admin.Lots.EditModel
 @using LakeCreekRanch.Web.Data.Enums;
+@inject LakeCreekRanch.Web.Services.IFormDataService FormDataHelper
 
 @{
     ViewData["Title"] = "Edit";
@@ -17,7 +18,7 @@
             <input type="hidden" asp-for="Lot.LotId" />
             <div class="form-group">
                 <label asp-for="Lot.DevelopmentPhaseID" class="control-label"></label>
-                <select asp-for="Lot.DevelopmentPhaseID" class="form-control" asp-items="ViewBag.DevelopmentPhaseID"></select>
+                <select asp-for="Lot.DevelopmentPhaseID" class="form-control" asp-items="FormDataHelper.GetDevelopmentPhases()"></select>
                 <span asp-validation-for="Lot.DevelopmentPhaseID" class="text-danger"></span>
             </div>
             <div class="form-group">

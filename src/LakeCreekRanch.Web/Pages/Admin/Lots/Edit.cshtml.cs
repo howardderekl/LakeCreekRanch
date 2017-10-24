@@ -36,7 +36,7 @@ namespace LakeCreekRanch.Web.Pages.Admin.Lots
             {
                 return NotFound();
             }
-           ViewData["DevelopmentPhaseID"] = new SelectList(_context.DevelopmentPhase, "DevelopmentPhaseId", "Name");
+
             return Page();
         }
 

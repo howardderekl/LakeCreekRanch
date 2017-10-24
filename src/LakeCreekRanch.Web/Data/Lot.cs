@@ -24,5 +24,12 @@ namespace LakeCreekRanch.Web.Data
 
         [Display(Name = "Development Phase")]
         public virtual DevelopmentPhase DevelopmentPhase { get; set; }
+
+        public virtual string FullName
+        {
+            get {
+                return $"{this.DevelopmentPhase.Name}: {this.Name}";
+            }
+        }
     }
 }

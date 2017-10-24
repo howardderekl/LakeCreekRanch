@@ -36,7 +36,7 @@ namespace LakeCreekRanch.Web.Pages.Admin.HomesForSale
             {
                 return NotFound();
             }
-           ViewData["LotId"] = new SelectList(_context.Lot, "LotId", "Name");
+
             return Page();
         }
 
