@@ -14,6 +14,10 @@ namespace LakeCreekRanch.Data
         {
         }
 
+        public DbSet<HomeForSale> HomeForSale { get; set; }
+        public DbSet<DevelopmentPhase> DevelopmentPhase { get; set; }
+        public DbSet<Lot> Lot { get; set; }
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);

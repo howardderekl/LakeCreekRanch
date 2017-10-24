@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace LakeCreekRanch.Pages.Account.Manage
 {
-    public static class AdminNavPages
+    public static class ManageNavPages
     {
         public static string Index => "Index";
 
