@@ -1,0 +1,79 @@
+﻿@page "{id:int}"
+@model LakeCreekRanch.Pages.Admin.HomesForSale.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>HomeForSale</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.HomeForSale.Description)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HomeForSale.Description)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HomeForSale.Address)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HomeForSale.Address)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HomeForSale.MlsUrl)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HomeForSale.MlsUrl)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HomeForSale.TotalSquareFeet)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HomeForSale.TotalSquareFeet)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HomeForSale.BedroomCount)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HomeForSale.BedroomCount)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HomeForSale.BathroomCount)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HomeForSale.BathroomCount)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HomeForSale.HideFromWebsite)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HomeForSale.HideFromWebsite)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HomeForSale.CompletionDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HomeForSale.CompletionDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HomeForSale.SaleStatus)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HomeForSale.SaleStatus)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HomeForSale.Lot)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HomeForSale.Lot.Name)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.HomeForSale.HomeForSaleId">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

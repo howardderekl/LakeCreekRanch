@@ -19,8 +19,10 @@ namespace LakeCreekRanch.Data
         [Display(Name = "Total Acres")]
         public decimal TotalAcres { get; set; }
 
+        [Display(Name = "Sale Status")]
         public SaleStatus SaleStatus { get; set; }
 
+        [Display(Name = "Development Phase")]
         public virtual DevelopmentPhase DevelopmentPhase { get; set; }
     }
 }

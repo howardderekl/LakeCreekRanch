@@ -1,0 +1,82 @@
+﻿@page "{id:int}"
+@model LakeCreekRanch.Pages.Admin.HomesForSale.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>HomeForSale</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.HomeForSale.Description)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HomeForSale.Description)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HomeForSale.Address)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HomeForSale.Address)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HomeForSale.MlsUrl)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HomeForSale.MlsUrl)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HomeForSale.TotalSquareFeet)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HomeForSale.TotalSquareFeet)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HomeForSale.BedroomCount)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HomeForSale.BedroomCount)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HomeForSale.BathroomCount)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HomeForSale.BathroomCount)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HomeForSale.HideFromWebsite)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HomeForSale.HideFromWebsite)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HomeForSale.CompletionDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HomeForSale.CompletionDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HomeForSale.SaleStatus)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HomeForSale.SaleStatus)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HomeForSale.Lot)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HomeForSale.Lot.Name)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="HomeForSale.HomeForSaleId" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-page="./Index">Back to List</a>
+    </form>
+</div>

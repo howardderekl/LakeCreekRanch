@@ -1,0 +1,90 @@
+﻿@page
+@model LakeCreekRanch.Pages.Admin.HomesForSale.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Homes For Sale List</h2>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.HomeForSale[0].Description)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.HomeForSale[0].Address)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.HomeForSale[0].MlsUrl)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.HomeForSale[0].TotalSquareFeet)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.HomeForSale[0].BedroomCount)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.HomeForSale[0].BathroomCount)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.HomeForSale[0].HideFromWebsite)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.HomeForSale[0].CompletionDate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.HomeForSale[0].SaleStatus)
+                </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HomeForSale[0].Lot)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.HomeForSale) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MlsUrl)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalSquareFeet)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BedroomCount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BathroomCount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HideFromWebsite)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CompletionDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SaleStatus)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Lot.Name)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.HomeForSaleId">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.HomeForSaleId">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.HomeForSaleId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
