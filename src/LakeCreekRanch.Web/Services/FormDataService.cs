@@ -32,11 +32,13 @@ namespace LakeCreekRanch.Web.Services
         public List<SelectListItem> GetLots()
         {
             return _context.Lot
+                .Include(l => l.DevelopmentPhase)
                 .OrderBy(l => l.DevelopmentPhase.Name)
                 .ThenBy(l => l.Name)
+                .ToList()
                 .Select(l => new SelectListItem()
                 {
-                    Text = $"{l.DevelopmentPhase.Name}: {l.Name}",
+                    Text = l.FullName,
                     Value = l.LotId.ToString()
                 })
                 .ToList();

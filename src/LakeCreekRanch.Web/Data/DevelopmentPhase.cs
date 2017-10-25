@@ -25,7 +25,7 @@ namespace LakeCreekRanch.Web.Data
         [Display(Name = "Hide From Website")]
         public bool HideFromWebsite { get; set; } = false;
 
-        public virtual ICollection<Lot> Lots { get; set; }
+        public ICollection<Lot> Lots { get; set; }
 
     }
 }

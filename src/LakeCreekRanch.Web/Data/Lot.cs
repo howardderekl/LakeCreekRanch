@@ -7,7 +7,7 @@ namespace LakeCreekRanch.Web.Data
     {
         public int LotId { get; set; }
 
-        [Display(Name = "Development Phase")]
+        [Display(Name = "Development Phase ID")]
         public int DevelopmentPhaseID { get; set; }
 
         [Required]
@@ -23,9 +23,9 @@ namespace LakeCreekRanch.Web.Data
         public SaleStatus SaleStatus { get; set; }
 
         [Display(Name = "Development Phase")]
-        public virtual DevelopmentPhase DevelopmentPhase { get; set; }
+        public DevelopmentPhase DevelopmentPhase { get; set; }
 
-        public virtual string FullName
+        public string FullName
         {
             get {
                 return $"{this.DevelopmentPhase.Name}: {this.Name}";
