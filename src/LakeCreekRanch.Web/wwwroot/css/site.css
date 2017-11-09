@@ -1,6 +1,9 @@
 body {
     padding-top: 50px;
     padding-bottom: 20px;
+    line-height: 1.5;
+    color: #555;
+    font-family: 'Lato', sans-serif;
 }
 
 /* Wrapping element */
@@ -10,15 +13,30 @@ body {
     padding-right: 15px;
 }
 
+.fill-screen {
+    background-size: cover;
+    background-position: center;
+}
+
+.fixed-attachment {
+    background-attachment: fixed;
+}
+
+@media (max-width: 1024px) {
+    .fixed-attachment {
+        background-attachment: scroll;
+    }
+}
+
 /* Carousel */
 .carousel-caption p {
     font-size: 20px;
     line-height: 1.4;
 }
 
-/* Make .svg files in the carousel display properly in older browsers */
-.carousel-inner .item img[src$=".svg"] {
+#carousel img {
     width: 100%;
+    height: auto;
 }
 
 /* QR code generator */
@@ -38,7 +56,72 @@ body {
     margin-right: unset;
 }
 
-body > nav {
-    background-color: #fff;
+a {
+    text-decoration: none !important;
+    color: #1ABC9C;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    color: #444;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 0 0 30px 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 > span:not(.nocolor), h2 > span:not(.nocolor), h3 > span:not(.nocolor), h4 > span:not(.nocolor), h5 > span:not(.nocolor), h6 > span:not(.nocolor) {
+    color: #1ABC9C;
+}
+
+.heading-block {
+    margin-bottom: 50px;
+}
+
+.heading-block h2 {
+    font-size: 30px;
+}
+
+.heading-block h1, .heading-block h2, .heading-block h3, .heading-block h4, .emphasis-title h1, .emphasis-title h2 {
+    margin-bottom: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #333;
+}
+
+.heading-block > span:not(.before-heading) {
+    display: block;
+    margin-top: 10px;
+    font-weight: 300;
+    color: #777;
+}
+
+.heading-block h2 + span {
+    font-size: 22px;
+}
+
+.center .heading-block:after, .heading-block.center:after, .heading-block.title-center:after {
+    margin: 30px auto 0;
+}
+
+.heading-block:after {
+    content: '';
+    display: block;
+    margin-top: 30px;
+    width: 40px;
+    border-top: 2px solid #444;
+}
+
+.center {
+    text-align: center !important;
+}
+
+.topmargin-lg {
+    margin-top: 80px !important;
+}
+
+
+
+
+
 
