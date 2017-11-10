@@ -4,6 +4,7 @@ body {
     line-height: 1.5;
     color: #555;
     font-family: 'Lato', sans-serif;
+    position:relative;
 }
 
 /* Wrapping element */
@@ -34,6 +35,71 @@ body {
 .fill-screen {
     background-size: cover;
     background-position: center;
+}
+
+.title-row {
+    position:relative;
+    min-height: 300px;
+}
+
+.row-title {
+    position: absolute;
+    width:100%;
+    text-align: center;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%)
+}
+
+.title-row h2 {    
+    color: #EEE;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.15);
+    font-size: 64px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 30px;
+}
+
+.title-row p {
+    color: #EEE;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+@media (max-width: 768px) {
+    .title-row h2 {
+        font-size: 48px;
+    }
+
+    .title-row p {
+        font-size: 18px;
+    }
+}
+
+.title-image {
+    position:absolute;
+    padding:20px;
+    top:50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%)
+}
+
+.down-button {
+    position:absolute;
+    bottom: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.down-button i {
+    color: #fff;
 }
 
 .fixed-attachment {
