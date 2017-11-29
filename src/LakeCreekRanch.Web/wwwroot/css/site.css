@@ -244,24 +244,24 @@ h1 > span:not(.nocolor), h2 > span:not(.nocolor), h3 > span:not(.nocolor), h4 > 
     padding-top: 20px;
 }
 
-    .team-title h4 {
-        display: block;
-        margin-bottom: 0;
-        font-size: 19px;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        font-weight: 700;
-    }
+.team-title h4 {
+    display: block;
+    margin-bottom: 0;
+    font-size: 19px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
 
-    .team-title span {
-        display: block;
-        color: #1ABC9C;
-        font-weight: 400;
-        font-family: 'Crete Round', serif;
-        font-style: italic;
-        font-size: 15px;
-        margin-top: 5px;
-    }
+.team-title span {
+    display: block;
+    color: #1ABC9C;
+    font-weight: 400;
+    font-family: 'Crete Round', serif;
+    font-style: italic;
+    font-size: 15px;
+    margin-top: 5px;
+}
 
 .team-content {
     margin-top: 15px;
