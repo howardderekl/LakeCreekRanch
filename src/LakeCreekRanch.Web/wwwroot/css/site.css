@@ -351,3 +351,52 @@ body:not(.device-touch) .team-overlay {
     float: none;
     margin-left: 6px;
     margin-right: 6px;
+}
+
+.feature-box.media-box .fbox-media, .feature-box.media-box .fbox-media a, .feature-box.media-box .fbox-media img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.feature-box.media-box .fbox-media {
+    margin: 0 0 25px;
+}
+
+.feature-box h3 {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    color: #333;
+}
+
+.feature-box h3 span.subtitle {
+    display: block;
+    margin-top: 5px;
+    color: #444;
+    font-weight: 300;
+    text-transform: none;
+}
+
+.feature-box.media-box p {
+    margin-top: 17px;
+}
+
+.feature-box p {
+    margin: 8px 0 0 0;
+    color: #999;
+}
+
+@media (max-width: 767px) {
+    .col-md-4, .col-md-6 {
+        width: 100%;
+        margin-right: 0;
+        float: none;
+        margin-bottom: 50px !important;
+    }
+}
+
+
