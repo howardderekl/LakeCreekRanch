@@ -34,7 +34,9 @@ body {
 
 .fill-screen {
     background-size: cover;
-    background-position: center;
+    background-position: 0 0;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 .title-row {
@@ -399,4 +401,19 @@ body:not(.device-touch) .team-overlay {
     }
 }
 
+.dark .section, .section.dark {
+    background-color: #282828;
+    border-color: rgba(255,255,255,0.1);
+}
 
+.dark, .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+    color: #EEE;
+}
+
+.parallax {
+    background-color: transparent;
+    background-attachment: fixed;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
