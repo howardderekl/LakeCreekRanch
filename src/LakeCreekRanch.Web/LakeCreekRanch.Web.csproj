@@ -16,5 +16,8 @@
   <ItemGroup>
     <Folder Include="wwwroot\images\Banner\" />
     <Folder Include="wwwroot\images\Team\" />
+    <Folder Include="wwwroot\images\Portfolio\" />
+    <Folder Include="wwwroot\images\Portfolio\Cabin\" />
+    <Folder Include="wwwroot\images\Portfolio\Cabin\Thumbnails\" />
   </ItemGroup>
 </Project>

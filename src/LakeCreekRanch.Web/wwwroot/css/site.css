@@ -32,6 +32,16 @@ body {
     transition: margin .4s ease, padding .4s ease;
 }
 
+
+.parallax {
+    align-content background-color: transparent;
+    background-attachment: fixed;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size:cover;
+    overflow: hidden;
+}
+
 .fill-screen {
     background-size: cover;
     background-position: 0 0;
@@ -410,10 +420,60 @@ body:not(.device-touch) .team-overlay {
     color: #EEE;
 }
 
-.parallax {
-    background-color: transparent;
-    background-attachment: fixed;
-    background-position: 50% 0;
-    background-repeat: no-repeat;
-    overflow: hidden;
+.counter {
+    font-size: 42px;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+}
+
+.counter + h5 {
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+.dark .counter.counter-lined + h5:before {
+    border-color: #EEE;
+}
+
+.counter.counter-lined + h5:before {
+    display: block;
+    position: relative;
+    margin: 20px auto 25px auto;
+    content: '';
+    width: 15%;
+    border-top: 2px solid #444;
+    opacity: 0.9;
+}
+
+.heading-block.center > span, 
+.heading-block.title-center > span, 
+.center .heading-block > span {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.heading-block > span:not(.before-heading) {
+    display: block;
+    margin-top: 10px;
+    font-weight: 300;
+    color: #777;
+}
+
+.heading-block h2 + span {
+    font-size: 22px;
+}
+
+.heading-block h1, .heading-block h2, .heading-block h3, .heading-block h4, .emphasis-title h1, .emphasis-title h2 {
+    margin-bottom: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #333;
+}
+
+.heading-block h2 {
+    font-size: 30px;
 }
