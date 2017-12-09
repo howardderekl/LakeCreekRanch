@@ -477,3 +477,79 @@ body:not(.device-touch) .team-overlay {
 .heading-block h2 {
     font-size: 30px;
 }
+
+.feature-box h3 {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    color: #333;
+}
+
+    .feature-box h3 span.subtitle {
+        display: block;
+        margin-top: 5px;
+        color: #444;
+        font-weight: 300;
+        text-transform: none;
+    }
+
+.feature-box.fbox-bg.fbox-center:first-child {
+    margin-top: 48px;
+}
+
+.feature-box.fbox-bg.fbox-center {
+    margin-top: 68px;
+    padding: 68px 30px 30px;
+    background-color: #FFF;
+    border: 1px solid #E5E5E5;
+    border-radius: 5px;
+}
+
+.feature-box.fbox-bg.fbox-center.fbox-plain .fbox-icon, .feature-box.fbox-bg.fbox-center.fbox-border .fbox-icon, .feature-box.fbox-bg.fbox-center.fbox-outline .fbox-icon {
+        background-color: #FFF;
+    }
+
+.feature-box.fbox-bg.fbox-center .fbox-icon {
+    position: absolute;
+    top: -48px;
+    left: 50%;
+    margin: 0 0 0 -48px;
+}
+
+.feature-box.fbox-center .fbox-icon {
+    position: relative;
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 30px;
+}
+
+.feature-box.fbox-plain .fbox-icon {
+    border: none !important;
+    height: auto !important;
+}
+
+.feature-box .fbox-icon {
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    top: 0;
+    left: 0;
+}
+
+.feature-box.fbox-center {
+    padding: 0;
+    text-align: center;
+}
+
+.feature-box:first-child {
+    margin-top: 0;
+}
+
+.feature-box {
+    position: relative;
+    margin-top: 20px;
+    padding: 0 0 0 80px;
+}
