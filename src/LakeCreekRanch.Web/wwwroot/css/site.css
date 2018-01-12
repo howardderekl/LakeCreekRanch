@@ -5,6 +5,7 @@ body {
     color: #555;
     font-family: 'Lato', sans-serif;
     position:relative;
+    overflow-x:hidden;
 }
 
 /* Wrapping element */
@@ -551,5 +552,28 @@ body:not(.device-touch) .team-overlay {
 .feature-box {
     position: relative;
     margin-top: 20px;
-    padding: 0 0 0 80px;
+    padding: 0 0 0 00px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+
+        .navbar-collapse.collapse.in {
+            display: block !important;
+        }
+
+    .navbar-header .collapse, .navbar-toggle {
+        display: block !important;
+    }
+
+    .navbar-header {
+        float: none;
+    }
+
+    .body-content {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
 }

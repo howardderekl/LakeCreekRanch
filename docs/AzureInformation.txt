@@ -1,0 +1,29 @@
+
+ServerName: lakecreekranch
+server admin login: lcr_admin
+password: 1Pass4all
+Server=tcp:lakecreekranch.database.windows.net,1433;Initial Catalog=LakeCreekRanch;Persist Security Info=False;User ID=lcr_admin;Password=1Pass4all;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
+
+winhost db
+Server=tcp:s12.winhost.com,1433;Initial Catalog=DB_109228_lakecreekran;Persist Security Info=False;User ID=DB_109228_lakecreekran_user;Password=Montana2017;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
+
+"Data Source=tcp:s12.winhost.com;Initial Catalog=DB_109228_lakecreekran;User ID=DB_109228_lakecreekran_user;Password=Montana2017;Integrated Security=False;"
+
+Godaddy information:
+account number: 140785523
+password: Montana2017
+Pin: 1222
+
+Email = $5 a month per account $59.88 /year
+Search Engine Visibility = $35.88 /year
+4 domains = $69.68
+
+deanne's email password: Montana2017!
+
+
+Winhost information:
+Account Number: 0039042
+password: Same as godaddy
+
+Azure Connectionstring
+Server=tcp:howardtechsolutions.database.windows.net,1433;Initial Catalog=lakeCreekRanchDb;Persist Security Info=False;User ID=howardtech_user;Password=1Pass4all!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
