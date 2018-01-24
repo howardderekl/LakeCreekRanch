@@ -27,3 +27,8 @@ password: Same as godaddy
 
 Azure Connectionstring
 Server=tcp:howardtechsolutions.database.windows.net,1433;Initial Catalog=lakeCreekRanchDb;Persist Security Info=False;User ID=howardtech_user;Password=1Pass4all!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
+
+1/23/18 - TODO:
+- Add more pictures of the cabin, especially kitchen and bedrooms
+- Add a sitemap
+- Add a google map of the property to the bottom of the website.

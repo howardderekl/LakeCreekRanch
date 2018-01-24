@@ -451,7 +451,6 @@ body:not(.device-touch) .team-overlay {
 .heading-block.center > span, 
 .heading-block.title-center > span, 
 .center .heading-block > span {
-    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
 }

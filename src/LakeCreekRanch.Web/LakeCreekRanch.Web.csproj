@@ -20,4 +20,9 @@
     <Folder Include="wwwroot\images\Portfolio\Cabin\" />
     <Folder Include="wwwroot\images\Portfolio\Cabin\Thumbnails\" />
   </ItemGroup>
+  <ItemGroup>
+    <None Update="Robots.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 </Project>

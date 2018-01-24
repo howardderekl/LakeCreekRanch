@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Lake Creek Ranch</title>
+    <title>Lake Creek Ranch - Custom homes and acreage located in Montana's beautiful Northwest corner </title>
+    <meta name="description" content="Lake Creek Ranch is a gated community of custom 3 to 15 acre home sites located near Troy Montana in the beautiful Bull Lake Valley. Halfway between Sandpoint ID and Kalispel, the Bull Lake Valley is renowned for it's hunting and fishing and with the Cabinet Mountains next door and Bull Lake and the Kootenai River within minutes, your family is sure to find ample opportunities for outdoor recreation. The first custom home is now available and with over 2,500 square feet between the main house, a guest house and bonus room over the garage, you'll have room to entertain and sleep the extended family." />
 
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
@@ -17,10 +18,20 @@
               asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
         <link rel="stylesheet" href="~/lib/font-awesome-4.7.0/css/font-awesome.min.css" asp-append-version="true" />
-        <link rel="stylesheet" href="~/lib/nanogallery2-1.5.0/dist/css/nanogallery2.min.css"asp-append-version="true" />
-        <link href="~/css/animate.css" rel="stylesheet" asp-append-version="true"/>
+        <link rel="stylesheet" href="~/lib/nanogallery2-1.5.0/dist/css/nanogallery2.min.css" asp-append-version="true" />
+        <link href="~/css/animate.css" rel="stylesheet" asp-append-version="true" />
         <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     </environment>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112987268-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-112987268-1');
+    </script>
+
 </head>
 <body>
     <header id="home">
@@ -45,7 +56,7 @@
                         <li><a href="#section-surrounding-area">Surrounding Area</a></li>
                         <li><a href="#section-contact-us">Contact Us</a></li>
                     </ul>
-                    @await Html.PartialAsync("_LoginPartial")
+                    <!--@await Html.PartialAsync("_LoginPartial")-->
                 </div>
             </div>
         </nav>
@@ -83,7 +94,8 @@
         <script src="~/js/jquery.easing.1.3.js" asp-append-version="true"></script>
         <script src="~/lib/nanogallery2-1.5.0/dist/jquery.nanogallery2.min.js" asp-append-version="true"></script>
         <script src="~/lib/stellar.js-master/jquery.stellar.min.js" asp-append-version="true"></script>
-        <script src="~/js/site.min.js" asp-append-version="true"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+
     </environment>
 
     @RenderSection("Scripts", required: false)
