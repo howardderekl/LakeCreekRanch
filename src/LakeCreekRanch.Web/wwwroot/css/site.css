@@ -554,6 +554,11 @@ body:not(.device-touch) .team-overlay {
     padding: 0 0 0 00px;
 }
 
+#map {
+    width: 100%;
+    height: 600px
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
     .navbar-collapse.collapse {
         display: none !important;
@@ -574,5 +579,12 @@ body:not(.device-touch) .team-overlay {
     .body-content {
         padding-left: 5px;
         padding-right: 5px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    #map {
+        height: 300px;
     }
 }
