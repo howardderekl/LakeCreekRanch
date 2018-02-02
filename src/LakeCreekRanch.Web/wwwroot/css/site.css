@@ -35,7 +35,8 @@ body {
 
 
 .parallax {
-    align-content background-color: transparent;
+    align-content:center; 
+    background-color: transparent;
     background-attachment: fixed;
     background-position: 50% 0;
     background-repeat: no-repeat;
